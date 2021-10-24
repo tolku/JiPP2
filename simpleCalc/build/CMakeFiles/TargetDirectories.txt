@@ -1,0 +1,3 @@
+/Users/olku.t/CLionProjects/simpleCalc/build/CMakeFiles/rebuild_cache.dir
+/Users/olku.t/CLionProjects/simpleCalc/build/CMakeFiles/edit_cache.dir
+/Users/olku.t/CLionProjects/simpleCalc/build/CMakeFiles/exec.dir
