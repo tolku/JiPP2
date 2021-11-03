@@ -13,6 +13,52 @@ int main(int argc, char *argv[]){
         cout<<"Wrong number of parameters, type help"<<endl;
         exit(-1);
     }
+    if (strcmp(argv[1], "addMatrix") != 0 && strcmp(argv[1], "subtractMatrix") != 0 && strcmp(argv[1], "multiplyMatrix") != 0 && strcmp(argv[1], "multiplyByScalar") != 0 && strcmp(argv[1], "transpozeMatrix") != 0 && strcmp(argv[1], "powerMatrix") != 0 && strcmp(argv[1], "determinantMatrix") != 0 && strcmp(argv[1], "matrixIsDiagonal") != 0 && strcmp(argv[1], "sortRowsInMatrix") != 0){
+        cout<<endl;
+        cout<<"matrixApp"<<endl;
+        cout<<endl;
+        cout<<"Aby odpalic program, odpal matrixApp w matrixApp/build/src poprzez ./matrixApp <nazwa_dzialania>"<<endl;
+        cout<<endl;
+        cout<<"Dzialania do wyboru:"<<endl;
+        cout<<endl;
+        cout<<"addMatrix"<<endl;
+        cout<<"\tWpisujemy int lub double w zaleznosci na jakich liczbach wykonujemy operacje, nastepnie ilosc wierszy i kolumn pierwszej macierzy, pozniej ilosc wierszy i kolumn drugiej macierzy, a nastepnie uzupelniamy macierz liczbami, przy czym robimy to po kolumnach, czyli najpierw uzupelniamy kolumne pierwsza, pozniej druga etc"<<endl;
+        cout<<"\tDodaje dwie macierze i wyświetla macierz wynikową"<<endl;
+        cout<<endl;
+        cout<<"subtractMatrix"<<endl;
+        cout<<"\tWpisujemy int lub double w zaleznosci na jakich liczbach wykonujemy operacje, nastepnie ilosc wierszy i kolumn pierwszej macierzy, pozniej ilosc wierszy i kolumn drugiej macierzy, a nastepnie uzupelniamy macierz liczbami, przy czym robimy to po kolumnach, czyli najpierw uzupelniamy kolumne pierwsza, pozniej druga etc"<<endl;
+        cout<<"\tOdejmuje macierz drugą od pierwszej i wyświetla macierz wynikową"<<endl;
+        cout<<endl;
+        cout<<"multiplyMatrix"<<endl;
+        cout<<"\tWpisujemy int lub double w zaleznosci na jakich liczbach wykonujemy operacje, nastepnie ilosc wierszy i kolumn pierwszej macierzy, pozniej ilosc wierszy i kolumn drugiej macierzy, a nastepnie uzupelniamy macierz liczbami, przy czym robimy to po kolumnach, czyli najpierw uzupelniamy kolumne pierwsza, pozniej druga etc"<<endl;
+        cout<<"\tMnoży macierz pierwszą przez drugą i wyświetla macierz wynikową"<<endl;
+        cout<<endl;
+        cout<<"multiplyByScalar"<<endl;
+        cout<<"\tWpisujemy int lub double w zaleznosci na jakich liczbach wykonujemy operacje, nastepnie ilosc wierszy i kolumn pierwszej macierzy, a nastepnie uzupelniamy macierz liczbami, nastepnie podajemy liczbę przez, którą mnożymy macierz"<<endl;
+        cout<<"\tMnoży macierz przez liczbę i wyświetla macierz wynikową"<<endl;
+        cout<<endl;
+        cout<<"transpozeMatrix"<<endl;
+        cout<<"\tWpisujemy int lub double w zaleznosci na jakich liczbach wykonujemy operacje, nastepnie ilosc wierszy i kolumn pierwszej macierzy, a nastepnie uzupelniamy macierz liczbami, przy czym robimy to po kolumnach, czyli najpierw uzupelniamy kolumne pierwsza, pozniej druga etc"<<endl;
+        cout<<"\tDokonuje transpozycji macierzy i wyświetla macierz wynikową"<<endl;
+        cout<<endl;
+        cout<<"powerMatrix"<<endl;
+        cout<<"\tWpisujemy int lub double w zaleznosci na jakich liczbach wykonujemy operacje, nastepnie ilosc wierszy i kolumn pierwszej macierzy, wpisujemy do liczbę, która oznacza potęgę, do której podnosimy macierz, a nastepnie uzupelniamy macierz liczbami, przy czym robimy to po kolumnach, czyli najpierw uzupelniamy kolumne pierwsza, pozniej druga etc"<<endl;
+        cout<<"\tPotęguje macierz i wyświetla macierz wynikową"<<endl;
+        cout<<endl;
+        cout<<"determinantMatrix"<<endl;
+        cout<<"\tWpisujemy int lub double w zaleznosci na jakich liczbach wykonujemy operacje, nastepnie ilosc wierszy i kolumn pierwszej macierzy, a nastepnie uzupelniamy macierz liczbami, przy czym robimy to po kolumnach, czyli najpierw uzupelniamy kolumne pierwsza, pozniej druga etc"<<endl;
+        cout<<"\tZnajduje wyznacznik macierzy, po czym wyświetla go w konsoli"<<endl;
+        cout<<endl;
+        cout<<"matrixIsDiagonal"<<endl;
+        cout<<"\tWpisujemy int lub double w zaleznosci na jakich liczbach wykonujemy operacje, nastepnie ilosc wierszy i kolumn pierwszej macierzy, a nastepnie uzupelniamy macierz liczbami, przy czym robimy to po kolumnach, czyli najpierw uzupelniamy kolumne pierwsza, pozniej druga etc"<<endl;
+        cout<<"\tSprawdza czy macierz jest diagonalna, jezeli jest to wyswietla 1, jezeli nie - 0 "<<endl;
+        cout<<endl;
+        cout<<"sortRowsInMatrix"<<endl;
+        cout<<"\tWpisujemy int lub double w zaleznosci na jakich liczbach wykonujemy operacje, nastepnie ilosc wierszy i kolumn pierwszej macierzy, a nastepnie uzupelniamy macierz liczbami, przy czym robimy to po kolumnach, czyli najpierw uzupelniamy kolumne pierwsza, pozniej druga etc"<<endl;
+        cout<<"\tSortuje wszystkie wiersze macierzy rosnąco"<<endl;
+        cout<<endl;
+        exit(0);
+    }
     int rows1, rows2;
     int columns1, columns2;
     string determine;
@@ -26,9 +72,6 @@ int main(int argc, char *argv[]){
     char arr_x[x + 1];
     strcpy(arr_n, determine.c_str());
     strcpy(arr_x, operation.c_str());
-    if (strcmp(arr_x, "addMatrix") != 0 && strcmp(arr_x, "subtractMatrix") != 0 && strcmp(arr_x, "multiplyMatrix") != 0 && strcmp(arr_x, "multiplyByScalar") != 0 && strcmp(arr_x, "transpozeMatrix") != 0 && strcmp(arr_x, "powerMatrix") != 0 && strcmp(arr_x, "determinantMatrix") != 0 && strcmp(arr_x, "matrixIsDiagonal") != 0 && strcmp(arr_x, "sortRowsInMatrix") != 0){
-        goto help;
-    }
     cout<<"Enter the number of rows in the FIRST matrix"<<endl;
     cin>>rows1;
     cout<<"Enter the number of columns in the FIRST matrix"<<endl;
@@ -427,48 +470,4 @@ int main(int argc, char *argv[]){
             exit(0);
         }
     }
-    help:
-    cout<<endl;
-    cout<<"matrixApp"<<endl;
-    cout<<endl;
-    cout<<"Aby odpalic program, odpal matrixApp w matrixApp/build/src poprzez ./matrixApp <nazwa_dzialania>"<<endl;
-    cout<<endl;
-    cout<<"Dzialania do wyboru:"<<endl;
-    cout<<endl;
-    cout<<"addMatrix"<<endl;
-    cout<<"\tWpisujemy int lub double w zaleznosci na jakich liczbach wykonujemy operacje, nastepnie ilosc wierszy i kolumn pierwszej macierzy, pozniej ilosc wierszy i kolumn drugiej macierzy, a nastepnie uzupelniamy macierz liczbami, przy czym robimy to po kolumnach, czyli najpierw uzupelniamy kolumne pierwsza, pozniej druga etc"<<endl;
-    cout<<"\tDodaje dwie macierze i wyświetla macierz wynikową"<<endl;
-    cout<<endl;
-    cout<<"subtractMatrix"<<endl;
-    cout<<"\tWpisujemy int lub double w zaleznosci na jakich liczbach wykonujemy operacje, nastepnie ilosc wierszy i kolumn pierwszej macierzy, pozniej ilosc wierszy i kolumn drugiej macierzy, a nastepnie uzupelniamy macierz liczbami, przy czym robimy to po kolumnach, czyli najpierw uzupelniamy kolumne pierwsza, pozniej druga etc"<<endl;
-    cout<<"\tOdejmuje macierz drugą od pierwszej i wyświetla macierz wynikową"<<endl;
-    cout<<endl;
-    cout<<"multiplyMatrix"<<endl;
-    cout<<"\tWpisujemy int lub double w zaleznosci na jakich liczbach wykonujemy operacje, nastepnie ilosc wierszy i kolumn pierwszej macierzy, pozniej ilosc wierszy i kolumn drugiej macierzy, a nastepnie uzupelniamy macierz liczbami, przy czym robimy to po kolumnach, czyli najpierw uzupelniamy kolumne pierwsza, pozniej druga etc"<<endl;
-    cout<<"\tMnoży macierz pierwszą przez drugą i wyświetla macierz wynikową"<<endl;
-    cout<<endl;
-    cout<<"multiplyByScalar"<<endl;
-    cout<<"\tWpisujemy int lub double w zaleznosci na jakich liczbach wykonujemy operacje, nastepnie ilosc wierszy i kolumn pierwszej macierzy, a nastepnie uzupelniamy macierz liczbami, nastepnie podajemy liczbę przez, którą mnożymy macierz"<<endl;
-    cout<<"\tMnoży macierz przez liczbę i wyświetla macierz wynikową"<<endl;
-    cout<<endl;
-    cout<<"transpozeMatrix"<<endl;
-    cout<<"\tWpisujemy int lub double w zaleznosci na jakich liczbach wykonujemy operacje, nastepnie ilosc wierszy i kolumn pierwszej macierzy, a nastepnie uzupelniamy macierz liczbami, przy czym robimy to po kolumnach, czyli najpierw uzupelniamy kolumne pierwsza, pozniej druga etc"<<endl;
-    cout<<"\tDokonuje transpozycji macierzy i wyświetla macierz wynikową"<<endl;
-    cout<<endl;
-    cout<<"powerMatrix"<<endl;
-    cout<<"\tWpisujemy int lub double w zaleznosci na jakich liczbach wykonujemy operacje, nastepnie ilosc wierszy i kolumn pierwszej macierzy, wpisujemy do liczbę, która oznacza potęgę, do której podnosimy macierz, a nastepnie uzupelniamy macierz liczbami, przy czym robimy to po kolumnach, czyli najpierw uzupelniamy kolumne pierwsza, pozniej druga etc"<<endl;
-    cout<<"\tPotęguje macierz i wyświetla macierz wynikową"<<endl;
-    cout<<endl;
-    cout<<"determinantMatrix"<<endl;
-    cout<<"\tWpisujemy int lub double w zaleznosci na jakich liczbach wykonujemy operacje, nastepnie ilosc wierszy i kolumn pierwszej macierzy, a nastepnie uzupelniamy macierz liczbami, przy czym robimy to po kolumnach, czyli najpierw uzupelniamy kolumne pierwsza, pozniej druga etc"<<endl;
-    cout<<"\tZnajduje wyznacznik macierzy, po czym wyświetla go w konsoli"<<endl;
-    cout<<endl;
-    cout<<"matrixIsDiagonal"<<endl;
-    cout<<"\tWpisujemy int lub double w zaleznosci na jakich liczbach wykonujemy operacje, nastepnie ilosc wierszy i kolumn pierwszej macierzy, a nastepnie uzupelniamy macierz liczbami, przy czym robimy to po kolumnach, czyli najpierw uzupelniamy kolumne pierwsza, pozniej druga etc"<<endl;
-    cout<<"\tSprawdza czy macierz jest diagonalna, jezeli jest to wyswietla 1, jezeli nie - 0 "<<endl;
-    cout<<endl;
-    cout<<"sortRowsInMatrix"<<endl;
-    cout<<"\tWpisujemy int lub double w zaleznosci na jakich liczbach wykonujemy operacje, nastepnie ilosc wierszy i kolumn pierwszej macierzy, a nastepnie uzupelniamy macierz liczbami, przy czym robimy to po kolumnach, czyli najpierw uzupelniamy kolumne pierwsza, pozniej druga etc"<<endl;
-    cout<<"\tSortuje wszystkie wiersze macierzy rosnąco"<<endl;
-    cout<<endl;
 }
