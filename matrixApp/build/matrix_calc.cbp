@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="matrix_calc"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\matrixLib\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/olku.t/CLionProjects/matrixApp/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/olku.t/CLionProjects/matrixApp/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/olku.t/CLionProjects/matrixApp/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="matrixApp">
+				<Option output="/Users/olku.t/CLionProjects/matrixApp/build/src/matrixApp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/olku.t/CLionProjects/matrixApp/build/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/olku.t/CLionProjects/matrixApp/include"/>
+					<Add directory="/Users/olku.t/CLionProjects/matrixApp/matrixApp/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/src/Makefile&quot;  VERBOSE=1 matrixApp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="matrixApp/fast">
+				<Option output="/Users/olku.t/CLionProjects/matrixApp/build/src/matrixApp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/olku.t/CLionProjects/matrixApp/build/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/olku.t/CLionProjects/matrixApp/include"/>
+					<Add directory="/Users/olku.t/CLionProjects/matrixApp/matrixApp/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/src/Makefile&quot;  VERBOSE=1 matrixApp/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="matrixLib">
+				<Option output="/Users/olku.t/CLionProjects/matrixApp/build/matrixLib/libmatrixLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/olku.t/CLionProjects/matrixApp/build/matrixLib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/olku.t/CLionProjects/matrixApp/include"/>
+					<Add directory="/Users/olku.t/CLionProjects/matrixApp/matrixLib/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/matrixLib/Makefile&quot;  VERBOSE=1 matrixLib"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/matrixLib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/matrixLib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/matrixLib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="matrixLib/fast">
+				<Option output="/Users/olku.t/CLionProjects/matrixApp/build/matrixLib/libmatrixLib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/olku.t/CLionProjects/matrixApp/build/matrixLib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/olku.t/CLionProjects/matrixApp/include"/>
+					<Add directory="/Users/olku.t/CLionProjects/matrixApp/matrixLib/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/matrixLib/Makefile&quot;  VERBOSE=1 matrixLib/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/matrixLib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/matrixLib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/olku.t/CLionProjects/matrixApp/build/matrixLib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/olku.t/CLionProjects/matrixApp/matrixLib/library.cpp">
+			<Option target="matrixLib"/>
+		</Unit>
+		<Unit filename="/Users/olku.t/CLionProjects/matrixApp/src/main.cpp">
+			<Option target="matrixApp"/>
+		</Unit>
+		<Unit filename="/Users/olku.t/CLionProjects/matrixApp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/olku.t/CLionProjects/matrixApp/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/Users/olku.t/CLionProjects/matrixApp/matrixLib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\matrixLib\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

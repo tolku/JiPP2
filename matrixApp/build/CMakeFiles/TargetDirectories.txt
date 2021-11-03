@@ -1,0 +1,8 @@
+/Users/olku.t/CLionProjects/matrixApp/build/CMakeFiles/rebuild_cache.dir
+/Users/olku.t/CLionProjects/matrixApp/build/CMakeFiles/edit_cache.dir
+/Users/olku.t/CLionProjects/matrixApp/build/src/CMakeFiles/rebuild_cache.dir
+/Users/olku.t/CLionProjects/matrixApp/build/src/CMakeFiles/edit_cache.dir
+/Users/olku.t/CLionProjects/matrixApp/build/src/CMakeFiles/matrixApp.dir
+/Users/olku.t/CLionProjects/matrixApp/build/matrixLib/CMakeFiles/rebuild_cache.dir
+/Users/olku.t/CLionProjects/matrixApp/build/matrixLib/CMakeFiles/edit_cache.dir
+/Users/olku.t/CLionProjects/matrixApp/build/matrixLib/CMakeFiles/matrixLib.dir

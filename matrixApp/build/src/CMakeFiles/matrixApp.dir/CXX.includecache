@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/olku.t/CLionProjects/matrixApp/include/matrixFunctions.h
+
+/Users/olku.t/CLionProjects/matrixApp/src/main.cpp
+iostream
+-
+string.h
+-
+../include/matrixFunctions.h
+/Users/olku.t/CLionProjects/matrixApp/include/matrixFunctions.h
+
